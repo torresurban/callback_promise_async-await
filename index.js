@@ -4,7 +4,7 @@ const argv = require('yargs')
                 alias: 'base',
                 type: 'number',
                 demandOption: true,
-                descripcion: 'Es la base de la tabla de multiplicar'
+                describe: 'Es la base de la tabla de multiplicar'
             })
             .option('l', {
                 alias: 'limite',
