@@ -4,7 +4,8 @@
   "description": "Aplicacion de lineas de comandos para multiplicar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/torresurban/callback_promise_async-await/issues"
   },
-  "homepage": "https://github.com/torresurban/callback_promise_async-await#readme"
+  "homepage": "https://github.com/torresurban/callback_promise_async-await#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "colors": "^1.4.0",
+    "yargs": "^17.4.1"
+  }
 }

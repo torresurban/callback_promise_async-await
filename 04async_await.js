@@ -33,7 +33,7 @@ const getEmpleadoById = async (id) => {
                 return empleado;
             }
             throw new Error(`No existe un empleado con id ${id}`);
-    
+
     } catch (error) {
         //throw new Error(`El empleado con id ${id} no existe`);
         throw error;
@@ -71,12 +71,12 @@ const getSueldoById = async (id) => {
 
 const id = 2;
 const getDatosEmpleado = async (id) => {
-    
+
     try {
 
         const empleado = await getEmpleadoById(id);
         const sueldo = await getSueldoById(id);
-        
+
         //return `El empleado con id ${id} es ${empleado.nombre} y tiene un sueldo de ${sueldo.monto}`
         return {
             id,
@@ -86,7 +86,7 @@ const getDatosEmpleado = async (id) => {
 
     } catch (error) {
         throw error;
-        
+
     }
 }
 
